@@ -59,7 +59,7 @@ def child_creater(parent):
             for k in range(3):
                 val = parent[i][j][k]
                 disparity = abs(img[i][j][k] - val)
-                children = [random.randint(val-50, val+50)]
+                children = [random.randint(val-50, val+50),random.randint(val-50, val+50),random.randint(val-50, val+50),random.randint(val-50, val+50)]
                 for c in children:
                     if c > 255:
                         c = 255
